@@ -9,16 +9,16 @@ int[] ints = new int[1];
 int counter = 0;
 while (counter < ints.Length)
 {
-  Console.Write("Введите значение для вывода четной последовательности: ");
+  Console.Write("Введите трёхзначное число, для вывода значения второго порядка: ");
   string da = Console.ReadLine();
-  if (Int32.TryParse(da, out int a))
+  if (Int32.TryParse(da, out int a) && da.Length == 3)
   {
     ints[counter] = a;
     counter++;
   }
   else
   {
-    Console.WriteLine("{0} не похоже на число", a);
+    Console.WriteLine("{0} не похоже на трёхзначное число", a);
   }
 }
 //если значение меньше 2 или -2, смысла в итерации нет
