@@ -23,7 +23,6 @@ while (res < 1)
   string da = Console.ReadLine().Replace("-", ""); 
   if (Int32.TryParse(da, out int a) && da.Replace("-", "").Length == 5 && (a > 9999 || (a * -1) < 9999))
   {
-    
     if ((da.ToArray()[4].ToString() + da.ToArray()[3].ToString()) == (da.ToArray()[0].ToString() + da.ToArray()[1].ToString())) 
     {
       Console.WriteLine($"Полином: {da.ToArray()[4].ToString() + da.ToArray()[3].ToString()} == {da.ToArray()[1].ToString() + da.ToArray()[0].ToString()}");
