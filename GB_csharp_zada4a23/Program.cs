@@ -1,20 +1,50 @@
-﻿int res = 0;
-while (res < 1)
+﻿int count = 0;
+while (count++ < 1)
 {
-  Console.Write("Введите пятизначное число: ");
-  string da = Console.ReadLine().Replace("-", "");
-  if ( Int32.TryParse(da, out int a) )
+  Console.Write("Введите число: ");
+  string dig = Console.ReadLine();
+if ( Int32.TryParse(dig, out int a))
   {
-
-    if ((da.ToArray()[4].ToString() + da.ToArray()[3].ToString()) == (da.ToArray()[0].ToString() + da.ToArray()[1].ToString()))
+    if (a > 0)
     {
-      Console.WriteLine($"Полином: {da.ToArray()[4].ToString() + da.ToArray()[3].ToString()} == {da.ToArray()[0].ToString() + da.ToArray()[1].ToString()}");
-      res++;
-      Console.ReadLine();
+      Console.Write(a + "-> ");
+      for (int counter = 1; counter < a + 1; counter++)
+      {
+        if (a == counter)
+        {
+          Console.Write(Math.Pow(counter, 3) + ".\n");
+        }
+        else
+        {
+          Console.Write(Math.Pow(counter, 3) + ",");
+        }
+      }
     }
+    if (a < 0)
+    {
+      a = a * -1;
+      Console.Write("-" + a + "-> ");
+      for (int counter = 1; counter < a + 1; counter++)
+      {
+        if (a == counter)
+        {
+          Console.Write(Math.Pow(counter, 3)*-1 + ".\n");
+        }
+        else
+        {
+          Console.Write(Math.Pow(counter, 3) *-1 + ",");
+        }
+      }
+    }
+    if (a == 0)
+    {
+      Console.Write("ноль не возводится\n");
+      return;
+    }
+    count++;
   }
   else
   {
-    Console.WriteLine($"{da} не похоже на пятизначное число");
+    Console.WriteLine($"{dig} не похоже на число");
   }
 }
