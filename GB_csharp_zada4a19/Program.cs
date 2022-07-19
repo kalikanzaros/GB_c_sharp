@@ -26,7 +26,7 @@ while (res < 1)
     
     if ((da.ToArray()[4].ToString() + da.ToArray()[3].ToString()) == (da.ToArray()[0].ToString() + da.ToArray()[1].ToString())) 
     {
-      Console.WriteLine($"Полином: {da.ToArray()[4].ToString() + da.ToArray()[3].ToString()} == {da.ToArray()[0].ToString() + da.ToArray()[1].ToString()}");
+      Console.WriteLine($"Полином: {da.ToArray()[4].ToString() + da.ToArray()[3].ToString()} == {da.ToArray()[1].ToString() + da.ToArray()[0].ToString()}");
       res++;
       Console.ReadLine();
     }

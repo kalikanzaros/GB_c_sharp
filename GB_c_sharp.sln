@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a15", "GB_cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a19", "GB_csharp_zada4a19\GB_csharp_zada4a19.csproj", "{143F9318-A280-45B3-9850-25449665E77D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a23", "GB_csharp_zada4a23\GB_csharp_zada4a23.csproj", "{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{143F9318-A280-45B3-9850-25449665E77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143F9318-A280-45B3-9850-25449665E77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143F9318-A280-45B3-9850-25449665E77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
