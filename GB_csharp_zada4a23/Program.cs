@@ -41,7 +41,7 @@ if ( Int32.TryParse(dig, out int a))
       Console.Write("ноль не возводится\n");
       return;
     }
-    count++;
+      count++;
   }
   else
   {
