@@ -46,11 +46,11 @@ long digital_input()
 
 long pow_input(long input_1, long input_2)
 {
-  //if (input_2 == 0 || input_2 == 1 || input_1 == 0 || input_1 == 1)
-  //{
-  //  Console.WriteLine($"Операция не имеет смысла!!!\nОдин из элементов итерации \"0 || 1\"");
-  //  return 0;
-  //}
+  if (input_2 == 0 || input_2 == 1 || input_1 == 0 || input_1 == 1)
+  {
+    Console.WriteLine($"Операция не имеет смысла!!!\nОдин из элементов итерации \"0 || 1\"");
+    return 0;
+  }
   while (counter_pow < input_2 - 1)
   {
     try
