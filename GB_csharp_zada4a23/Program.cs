@@ -56,3 +56,4 @@ if ( Int32.TryParse(dig, out int a))
     Console.WriteLine($"{dig} не похоже на число");
   }
 }
+Console.WriteLine($"Конец операции Ы!!!");
