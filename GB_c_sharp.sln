@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_34", "GB_c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_36", "GB_csharp_zada4a_36\GB_csharp_zada4a_36.csproj", "{F9FA9E43-93F5-4019-B26A-DAA640531EB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharop_zada4a_38", "GB_csharop_zada4a_38\GB_csharop_zada4a_38.csproj", "{CC80521A-039D-438B-A24A-C7E3FDA73188}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{F9FA9E43-93F5-4019-B26A-DAA640531EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9FA9E43-93F5-4019-B26A-DAA640531EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9FA9E43-93F5-4019-B26A-DAA640531EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC80521A-039D-438B-A24A-C7E3FDA73188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC80521A-039D-438B-A24A-C7E3FDA73188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC80521A-039D-438B-A24A-C7E3FDA73188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC80521A-039D-438B-A24A-C7E3FDA73188}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
