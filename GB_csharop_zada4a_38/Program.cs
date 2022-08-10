@@ -4,8 +4,8 @@
 
 int[] ints = new int[rand()];
 int index = 0;
-int min_ints;
-int max_ints;
+int min_ints = 0;
+int max_ints = 0;
 Console.Write($"Количество объектов в массиве {ints.Length}\n[");
 while (index < ints.Length -1)
 {
