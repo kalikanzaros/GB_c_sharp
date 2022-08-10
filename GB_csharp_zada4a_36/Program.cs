@@ -11,7 +11,7 @@ Console.Write($"Количество объектов в массиве {ints.Le
 while (a < ints.Length )
 {
   Console.Write($"{ints[a] = rand()}");
-  if (a == 1 || a % 2 == 1)
+  if (a % 2 == 1)
   {
     b += ints[a];
     Console.Write($"({a}%2=1)");
@@ -20,7 +20,7 @@ while (a < ints.Length )
   {
     Console.Write($"({a}%2=0)");
   }
-  if (a > 0)
+  if (a > 0 )
   {
     Console.Write($",");
   }

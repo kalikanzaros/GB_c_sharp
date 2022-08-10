@@ -38,7 +38,7 @@ while (index < ints.Length -1)
   }
   index++;
 }
-Console.WriteLine($"]  разницу максимального и минимального элемента массива -> {max_ints} - {min_ints} = {max_ints - min_ints}");
+Console.WriteLine($"] -> Разницу максимального и минимального элемента массива -> {max_ints} - {min_ints} = {max_ints - min_ints}");
 
 static int rand()
 {
