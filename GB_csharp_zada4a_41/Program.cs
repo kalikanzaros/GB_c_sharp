@@ -25,13 +25,13 @@ while (while_counter == 0)
       }
       else
       {
-        Console.WriteLine($"Массива Int из этого не полчится, поробуйте снова.\n:");
+        Console.WriteLine($"Массива Int из этого не получится, поробуйте снова.\n:");
       }
     }
   }
 catch (Exception exception)
   {
-    Console.WriteLine($"{exception.Message}\nМассива Int из этого не полчится, поробуйте снова.\n:");
+    Console.WriteLine($"{exception.Message}\nМассива Int из этого не получится, поробуйте запустить снова.\n:");
   }
   Console.Write($"->{upzero_counter}");
 }
