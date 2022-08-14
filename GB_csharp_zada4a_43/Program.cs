@@ -34,7 +34,7 @@ static double input_worker()
 double x = - (double_numbers[0] - double_numbers[1]) / (double_numbers[2] - double_numbers[3]);
 double y = (double_numbers[2] * x + double_numbers[3]);
 //если пары элементов одинаковые получим  NaN
-if (x != double.NaN && y != double.NaN)
+if (!double.IsNaN(x) && !double.IsNaN(y))
 {
   x = Math.Round(x, 3);
   y = Math.Round(y, 3);
@@ -43,6 +43,6 @@ if (x != double.NaN && y != double.NaN)
 }
 else
 {
-  Console.WriteLine($"Никогда не встретиться, никогда не взглянуть в глаза\nтреугольник бесится, пересечься никак нельзя\n" +
+  Console.WriteLine($"Никогда не встретиться, никогда не взглянуть в глаза\nтреугольники бесятся, пересечься никак нельзя\n" +
     $"x:{x.ToString("0.00", CultureInfo.InvariantCulture)}, y:{y.ToString("0.00", CultureInfo.InvariantCulture)}");
 }
