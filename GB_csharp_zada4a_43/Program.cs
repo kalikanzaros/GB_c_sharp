@@ -1,5 +1,5 @@
 ﻿using System.Globalization;
-using System.Linq;
+
 /*
 Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых,
 заданных уравнениями  y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
@@ -12,7 +12,7 @@ double[] double_numbers = new double[name_numbers.Length];
 
 for (int i = 0; i < name_numbers.Length; i++ )
 {
-  Console.Write($"Введите знчение переменной\"{name_numbers[i]}\": ");
+  Console.Write($"Введите значение переменной\"{name_numbers[i]}\": ");
   double_numbers[i] = input_worker();
 }
 
