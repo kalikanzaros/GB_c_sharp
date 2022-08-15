@@ -16,21 +16,6 @@ for (int i = 0; i < name_numbers.Length; i++ )
   double_numbers[i] = input_worker();
 }
 
-
-static double input_worker()
-{
-  double result = 0.0;
-  while (true)
-  {
-    if (double.TryParse(Console.ReadLine(), out double outduble) == true)
-    {
-      result = outduble;
-      return result;
-    }
-    Console.WriteLine($"На дубль не похоже, вводим ещё раз: ");
-  }
-}
-
 double x = - (double_numbers[0] - double_numbers[1]) / (double_numbers[2] - double_numbers[3]);
 double y = (double_numbers[2] * x + double_numbers[3]);
 //если пары элементов одинаковые получим  NaN
@@ -45,4 +30,17 @@ else
 {
   Console.WriteLine($"Никогда им наверно не встретиться, не взглянуть друг другу в глаза\nотрезки беспомощно бесятся, пересечься никак нельзя\n" +
     $"x:{x.ToString("0.00", CultureInfo.InvariantCulture)}, y:{y.ToString("0.00", CultureInfo.InvariantCulture)}");
+}
+
+static double input_worker()
+{
+  while (true)
+  {
+    if (double.TryParse(Console.ReadLine(), out double outduble) == true)
+    {
+      double  result = outduble;
+      return result;
+    }
+    Console.WriteLine($"На дубль не похоже, вводим ещё раз: ");
+  }
 }
