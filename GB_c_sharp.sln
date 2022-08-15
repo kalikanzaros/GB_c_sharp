@@ -3,6 +3,78 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a10", "GB_csharp_zada4a10\GB_csharp_zada4a10.csproj", "{BACB5692-5414-47A8-A598-A89CE3840572}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a13", "GB_csharp_zada4a13\GB_csharp_zada4a13.csproj", "{C9212A7B-CCC1-4519-84EA-4E30FE285732}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a15", "GB_csharp_zada4a15\GB_csharp_zada4a15.csproj", "{0230D6C3-1AB0-40B4-876B-3DFA59F5928D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a19", "GB_csharp_zada4a19\GB_csharp_zada4a19.csproj", "{143F9318-A280-45B3-9850-25449665E77D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a23", "GB_csharp_zada4a23\GB_csharp_zada4a23.csproj", "{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a21", "GB_csharp_zada4a21\GB_csharp_zada4a21.csproj", "{C33274D6-84D9-496A-A436-F4E04D34AE5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_25", "GB_csharp_zada4a_25\GB_csharp_zada4a_25.csproj", "{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_27", "GB_csharp_zada4a_27\GB_csharp_zada4a_27.csproj", "{8CA177FB-EC26-4085-9849-7773F5F2C3D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_29", "GB_csharp_zada4a_29\GB_csharp_zada4a_29.csproj", "{871582A2-DCB9-4E35-896B-9F1273E90711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_34", "GB_csharp_zada4a_34\GB_csharp_zada4a_34.csproj", "{36B231ED-35FF-4E8D-A3B7-3F811123487D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_36", "GB_csharp_zada4a_36\GB_csharp_zada4a_36.csproj", "{F9FA9E43-93F5-4019-B26A-DAA640531EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_38", "GB_csharp_zada4a_38\GB_csharp_zada4a_38.csproj", "{F892810C-854B-4F03-83F9-D11F22BA7B68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a19", "GB_csharp_zada4a19\GB_csharp_zada4a19.csproj", "{143F9318-A280-45B3-9850-25449665E77D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a23", "GB_csharp_zada4a23\GB_csharp_zada4a23.csproj", "{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a21", "GB_csharp_zada4a21\GB_csharp_zada4a21.csproj", "{C33274D6-84D9-496A-A436-F4E04D34AE5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_25", "GB_csharp_zada4a_25\GB_csharp_zada4a_25.csproj", "{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_27", "GB_csharp_zada4a_27\GB_csharp_zada4a_27.csproj", "{8CA177FB-EC26-4085-9849-7773F5F2C3D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_29", "GB_csharp_zada4a_29\GB_csharp_zada4a_29.csproj", "{871582A2-DCB9-4E35-896B-9F1273E90711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_34", "GB_csharp_zada4a_34\GB_csharp_zada4a_34.csproj", "{36B231ED-35FF-4E8D-A3B7-3F811123487D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_36", "GB_csharp_zada4a_36\GB_csharp_zada4a_36.csproj", "{F9FA9E43-93F5-4019-B26A-DAA640531EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_38", "GB_csharp_zada4a_38\GB_csharp_zada4a_38.csproj", "{F892810C-854B-4F03-83F9-D11F22BA7B68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a19", "GB_csharp_zada4a19\GB_csharp_zada4a19.csproj", "{143F9318-A280-45B3-9850-25449665E77D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a23", "GB_csharp_zada4a23\GB_csharp_zada4a23.csproj", "{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a21", "GB_csharp_zada4a21\GB_csharp_zada4a21.csproj", "{C33274D6-84D9-496A-A436-F4E04D34AE5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_25", "GB_csharp_zada4a_25\GB_csharp_zada4a_25.csproj", "{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_27", "GB_csharp_zada4a_27\GB_csharp_zada4a_27.csproj", "{8CA177FB-EC26-4085-9849-7773F5F2C3D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_29", "GB_csharp_zada4a_29\GB_csharp_zada4a_29.csproj", "{871582A2-DCB9-4E35-896B-9F1273E90711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_34", "GB_csharp_zada4a_34\GB_csharp_zada4a_34.csproj", "{36B231ED-35FF-4E8D-A3B7-3F811123487D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_36", "GB_csharp_zada4a_36\GB_csharp_zada4a_36.csproj", "{F9FA9E43-93F5-4019-B26A-DAA640531EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_38", "GB_csharp_zada4a_38\GB_csharp_zada4a_38.csproj", "{F892810C-854B-4F03-83F9-D11F22BA7B68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a19", "GB_csharp_zada4a19\GB_csharp_zada4a19.csproj", "{143F9318-A280-45B3-9850-25449665E77D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a23", "GB_csharp_zada4a23\GB_csharp_zada4a23.csproj", "{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a21", "GB_csharp_zada4a21\GB_csharp_zada4a21.csproj", "{C33274D6-84D9-496A-A436-F4E04D34AE5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_25", "GB_csharp_zada4a_25\GB_csharp_zada4a_25.csproj", "{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_27", "GB_csharp_zada4a_27\GB_csharp_zada4a_27.csproj", "{8CA177FB-EC26-4085-9849-7773F5F2C3D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_29", "GB_csharp_zada4a_29\GB_csharp_zada4a_29.csproj", "{871582A2-DCB9-4E35-896B-9F1273E90711}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_34", "GB_csharp_zada4a_34\GB_csharp_zada4a_34.csproj", "{36B231ED-35FF-4E8D-A3B7-3F811123487D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_36", "GB_csharp_zada4a_36\GB_csharp_zada4a_36.csproj", "{F9FA9E43-93F5-4019-B26A-DAA640531EB7}"
@@ -15,6 +87,42 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BACB5692-5414-47A8-A598-A89CE3840572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACB5692-5414-47A8-A598-A89CE3840572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACB5692-5414-47A8-A598-A89CE3840572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACB5692-5414-47A8-A598-A89CE3840572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9212A7B-CCC1-4519-84EA-4E30FE285732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9212A7B-CCC1-4519-84EA-4E30FE285732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9212A7B-CCC1-4519-84EA-4E30FE285732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9212A7B-CCC1-4519-84EA-4E30FE285732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0230D6C3-1AB0-40B4-876B-3DFA59F5928D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0230D6C3-1AB0-40B4-876B-3DFA59F5928D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0230D6C3-1AB0-40B4-876B-3DFA59F5928D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0230D6C3-1AB0-40B4-876B-3DFA59F5928D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143F9318-A280-45B3-9850-25449665E77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143F9318-A280-45B3-9850-25449665E77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143F9318-A280-45B3-9850-25449665E77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143F9318-A280-45B3-9850-25449665E77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4A46D3-FA1C-4396-8D1A-A88C854024DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33274D6-84D9-496A-A436-F4E04D34AE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33274D6-84D9-496A-A436-F4E04D34AE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33274D6-84D9-496A-A436-F4E04D34AE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33274D6-84D9-496A-A436-F4E04D34AE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7A8AEF-B07C-464C-A1E4-7E2743F292FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA177FB-EC26-4085-9849-7773F5F2C3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA177FB-EC26-4085-9849-7773F5F2C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA177FB-EC26-4085-9849-7773F5F2C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA177FB-EC26-4085-9849-7773F5F2C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871582A2-DCB9-4E35-896B-9F1273E90711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871582A2-DCB9-4E35-896B-9F1273E90711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871582A2-DCB9-4E35-896B-9F1273E90711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871582A2-DCB9-4E35-896B-9F1273E90711}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36B231ED-35FF-4E8D-A3B7-3F811123487D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36B231ED-35FF-4E8D-A3B7-3F811123487D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36B231ED-35FF-4E8D-A3B7-3F811123487D}.Release|Any CPU.ActiveCfg = Release|Any CPU
