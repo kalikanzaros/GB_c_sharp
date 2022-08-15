@@ -43,6 +43,6 @@ if (!double.IsNaN(x) && !double.IsNaN(y))
 }
 else
 {
-  Console.WriteLine($"Никогда не встретиться, никогда не взглянуть в глаза\nтреугольники бесятся, пересечься никак нельзя\n" +
+  Console.WriteLine($"Никогда им наверно не встретиться, не взглянуть друг другу в глаза\nотрезки беспомощно бесятся, пересечься никак нельзя\n" +
     $"x:{x.ToString("0.00", CultureInfo.InvariantCulture)}, y:{y.ToString("0.00", CultureInfo.InvariantCulture)}");
 }
