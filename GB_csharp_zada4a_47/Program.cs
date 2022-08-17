@@ -15,7 +15,7 @@ Console.Write($"Введите цифру первого индекса масс
 ArrayIntIndex[0] = ParseIntInput();
 Console.Write($"Введите цифру второго индекса массива:");
 ArrayIntIndex[1] = ParseIntInput();
-int[,] ResulArray = new int[ArrayIntIndex[0], ArrayIntIndex[1]];
+int[,] ResultArray = new int[ArrayIntIndex[0], ArrayIntIndex[1]];
 
 int counter_baxpace = 0;
 for (int i = 0; i < ArrayIntIndex[1]; i++)
@@ -31,8 +31,8 @@ for (int i = 0; i < ArrayIntIndex[1]; i++)
   }
     for (int j = 0; j < ArrayIntIndex[0]; j++)
     {
-      ResulArray[j,i] = GenRandomInt();
-      Console.Write($" {ResulArray[j,i]} ");
+      ResultArray[j,i] = GenRandomInt();
+      Console.Write($" {ResultArray[j,i]} ");
     }
   if (counter_baxpace == ArrayIntIndex[1] -1)
   {
