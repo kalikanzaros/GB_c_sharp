@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_41", "GB_c
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_43", "GB_csharp_zada4a_43\GB_csharp_zada4a_43.csproj", "{93592D68-201B-441B-A169-29CDD13A5FBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_csharp_zada4a_47", "GB_csharp_zada4a_47\GB_csharp_zada4a_47.csproj", "{871CC6FA-2871-44F1-A8C8-DFA2E0C79D88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{93592D68-201B-441B-A169-29CDD13A5FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93592D68-201B-441B-A169-29CDD13A5FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93592D68-201B-441B-A169-29CDD13A5FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871CC6FA-2871-44F1-A8C8-DFA2E0C79D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871CC6FA-2871-44F1-A8C8-DFA2E0C79D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871CC6FA-2871-44F1-A8C8-DFA2E0C79D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871CC6FA-2871-44F1-A8C8-DFA2E0C79D88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

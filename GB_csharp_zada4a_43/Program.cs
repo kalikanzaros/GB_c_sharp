@@ -38,8 +38,7 @@ static double input_worker()
   {
     if (double.TryParse(Console.ReadLine(), out double outduble) == true)
     {
-      double  result = outduble;
-      return result;
+      return outduble;
     }
     Console.WriteLine($"На дубль не похоже, вводим ещё раз: ");
   }
