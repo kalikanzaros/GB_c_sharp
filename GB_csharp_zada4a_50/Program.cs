@@ -14,7 +14,7 @@ nullable игнорируем + почти  не обрабатываем и н�
 Console.Write($"Введите цифры первого и второго индекса массива\nчерез пробел: ");
 string strinput = Console.ReadLine();
 
-Console.Write($"Генерируем массив рандомный двухмерный массив:\n ");
+Console.Write($"Генерируем двухмерный массив:\n ");
 int[] ArrayIntIndex = new int[2];
 for (int i = 0; i < ArrayIntIndex.Length ;i++)
 {
@@ -22,15 +22,16 @@ for (int i = 0; i < ArrayIntIndex.Length ;i++)
 }
 int[,] ResultArray = new int[ArrayIntIndex[0], ArrayIntIndex[1]];
 
-
-static int GenRandomInt(int minval = 1, int maxval = 999)
+//minvalue < 2 = exception in func generatearray: if (counter_baxpace == ArrayIntIndex[1] - 1) 
+// красота не наводiтsya: if val1.len != val2.len
+static int GenRandomInt(int minval = 10, int maxval = 99)
 {
   Random random = new();
   int result = random.Next(minval, maxval);
   return result;
 }
 
-static List<string>? ParseStrInput(string inputstring)
+static List<string> ParseStrInput(string inputstring)
 {
   try
   {
@@ -42,6 +43,7 @@ static List<string>? ParseStrInput(string inputstring)
     return null;
   }
 }
+
 void generatearray()
 {
   int counter_baxpace = 0;
@@ -87,13 +89,11 @@ if (ParseStrInput(strinput) != null)
     && ParseIntInput(ParseStrInput(strinput)[1]) <= ArrayIntIndex[1])
   {
 
-    Console.WriteLine($"\nЗначение массива ResultArray с индексами: [{ArrayIntIndex[0]},{ArrayIntIndex[1]}]\n -> " +
-      $"с запрошенными индексами: {ResultArray[ParseIntInput(ParseStrInput(strinput)[0]), ParseIntInput(ParseStrInput(strinput)[1])]}.");
+    Console.WriteLine($"\nЗначение ResultArray[{ArrayIntIndex[0]},{ArrayIntIndex[1]}] -> {ResultArray[ParseIntInput(ParseStrInput(strinput)[0]), ParseIntInput(ParseStrInput(strinput)[1])]}.");
   }
   else
   {
-    Console.WriteLine($"Результат для двухмерного массива ResultArray[{ArrayIntIndex[0]}," +
-      $"{ArrayIntIndex[1]}]\nОтсутствует.");
+    Console.WriteLine($"\n Значение ResultArray[{ArrayIntIndex[0]}, {ArrayIntIndex[1]}] -> oтсутствует.");
   }
 }
 else
