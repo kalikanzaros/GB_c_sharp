@@ -102,7 +102,6 @@ void generatearray()
 
 
 double[] rndarray = new double[ParseIntInput(ListInputString[0])];
-
 for (int c = 0; c < ParseIntInput(ListInputString[0]); c++)
 {
   for (int b = 0; b < ParseIntInput(ListInputString[1]); b++)
