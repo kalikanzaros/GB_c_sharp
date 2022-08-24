@@ -9,7 +9,9 @@
 1 2 4 7
 2 3 5 9
 2 4 4 8
-*/
+СТРАННЫЙ ПОРЯДОК УБЫВАНИЯ 
+ */
+
 
 zada4a54();
 void zada4a54()
@@ -18,10 +20,16 @@ void zada4a54()
   List<string> ListInputString = new List<string>();
   int[] IndexFromList = new int[2];
   ParseStrInput(Console.ReadLine());
+
   int[,] ResultArray = new int[IndexFromList[0], IndexFromList[1]];
   int[,] SortedArray = new int[IndexFromList[0], IndexFromList[1]];
-  Console.Write($"Генерируем двухмерный массив:\n");
+  
+  Console.Write($"задан массив:\n");
   generatearray();
+  Console.Write($"В итоге получается вот такой массив:\n");
+
+  sortarray(ResultArray);
+
   void ParseStrInput(string inputstring)
   {
     bool whilecounter = false;
@@ -59,13 +67,7 @@ void zada4a54()
       }
     }
   }
-  
-  static int GenRandom(int minndex = 2, int maxindex = 10)
-  {
-    Random random = new();
-    int result = random.Next(minndex, maxindex);
-    return result;
-  }
+
   static int ParseIntInput(string pstring)
   {
     try
@@ -79,6 +81,14 @@ void zada4a54()
       return -1;
     }
   }
+ 
+  static int GenRandom(int minndex = 2, int maxindex = 10)
+  {
+    Random random = new();
+    int result = random.Next(minndex, maxindex);
+    return result;
+  }
+
   void generatearray()
   {
     for (int i = 0; i < IndexFromList[1]; i++)
@@ -91,42 +101,46 @@ void zada4a54()
       Console.Write($"\t\n");
     }
   }
-  //sortarray();
-  sortarray2(ResultArray);
-  void sortarray()
-  {
 
-    void swapindex(int indexmax, int indexmin)
-    {
-
-    }
-  }
-  void sortarray2(int[,] arr)
+  void sortarray(int[,] arr)
   {
-    int[] tmp_array = new int[IndexFromList[0]];
-    
+    int[] tmp_sortarray = new int[IndexFromList[0]];
     int count_cols = 0;
     int count_rows = 0;
+   
     for (int i = 0; i < IndexFromList[1]; i++)
     {
-      
       for (int a = 0; a < IndexFromList[0]; a++)
       {
-        tmp_array[a] = ResultArray[a, i];
+        tmp_sortarray[a] = arr[a, i];
         count_rows++;
       }
-      Array.Sort(tmp_array);
-      Array.Reverse(tmp_array);
-      varr(tmp_array, count_cols);
+      Array.Sort(tmp_sortarray);
+      //Array.Reverse(tmp_sortarray);
+      Console.WriteLine();
+      setarrayrows(tmp_sortarray, count_cols, false);
       count_cols++;
     }
-    
   }
-  void varr(int[] tmp_arr, int col)
+
+  void setarrayrows(int[] tmp_arr, int col, bool sign = true)
   {
-    for (int ii = 0; ii < tmp_arr.Length; ii++)
+    if(sign)
+    { 
+      for (int i = 0; i < tmp_arr.Length; i++)
+      {
+        SortedArray[i, col] = tmp_arr[i];
+        Console.Write($"{SortedArray[i,col]}\t");
+      }
+    }
+    if (!sign)
     {
-      SortedArray[col, ii] = tmp_arr[ii];
+      Array.Reverse(tmp_arr);
+      for (int i = 0; i < tmp_arr.Length; i++)
+      {
+        SortedArray[i, col] = tmp_arr[i];
+        Console.Write($"{SortedArray[i, col]}\t");
+      }
     }
   }
 }
