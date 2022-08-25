@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_csharp_zada4a_50", "GB_c
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_c_sharp_zada4a_52", "GB_c_sharp_zada4a_52\GB_c_sharp_zada4a_52.csproj", "{7F92AEF6-8955-498D-B204-01C95A484DD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_c_sharp_zada4a_54", "GB_c_sharp_zada4a_54\GB_c_sharp_zada4a_54.csproj", "{35C06FED-2ED7-431C-823B-A475CF06F921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GB_c_sharp_zada4a_54", "GB_c_sharp_zada4a_54\GB_c_sharp_zada4a_54.csproj", "{35C06FED-2ED7-431C-823B-A475CF06F921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_c_sharp_zada4a_56", "GB_c_sharp_zada4a_56\GB_c_sharp_zada4a_56.csproj", "{2AF27315-C26A-4E37-983B-548AF423F7AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{35C06FED-2ED7-431C-823B-A475CF06F921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35C06FED-2ED7-431C-823B-A475CF06F921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35C06FED-2ED7-431C-823B-A475CF06F921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF27315-C26A-4E37-983B-548AF423F7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF27315-C26A-4E37-983B-548AF423F7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF27315-C26A-4E37-983B-548AF423F7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF27315-C26A-4E37-983B-548AF423F7AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
