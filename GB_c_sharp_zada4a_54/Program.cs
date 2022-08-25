@@ -25,10 +25,10 @@ void zada4a54()
   int[,] SortedArray = new int[IndexFromList[0], IndexFromList[1]];
   
   Console.Write($"задан массив:\n");
-  generatearray();
+  GenArray();
   Console.Write($"В итоге получается вот такой массив:\n");
 
-  sortarray(ResultArray);
+  SortArray(ResultArray);
 
   void ParseStrInput(string inputstring)
   {
@@ -82,27 +82,27 @@ void zada4a54()
     }
   }
  
-  static int GenRandom(int minndex = 2, int maxindex = 10)
+  static int GenRandomDigit(int minndex = 2, int maxindex = 10)
   {
     Random random = new();
     int result = random.Next(minndex, maxindex);
     return result;
   }
 
-  void generatearray()
+  void GenArray()
   {
     for (int i = 0; i < IndexFromList[1]; i++)
     {
       for (int j = 0; j < IndexFromList[0]; j++)
       {
-        ResultArray[j, i] = GenRandom();
+        ResultArray[j, i] = GenRandomDigit();
         Console.Write($"\t{ResultArray[j, i]}");
       }
       Console.Write($"\t\n");
     }
   }
 
-  void sortarray(int[,] arr)
+  void SortArray(int[,] arr)
   {
     int[] tmp_sortarray = new int[IndexFromList[0]];
     int count_cols = 0;
@@ -118,12 +118,12 @@ void zada4a54()
       Array.Sort(tmp_sortarray);
       //Array.Reverse(tmp_sortarray);
       Console.WriteLine();
-      setarrayrows(tmp_sortarray, count_cols, false);
+      SetArrayRows(tmp_sortarray, count_cols, false);
       count_cols++;
     }
   }
 
-  void setarrayrows(int[] tmp_arr, int col, bool sign = true)
+  void SetArrayRows(int[] tmp_arr, int col, bool sign = true)
   {
     if(sign)
     { 
