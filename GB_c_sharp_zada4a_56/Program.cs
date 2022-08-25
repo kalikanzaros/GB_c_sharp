@@ -1,42 +1,35 @@
 ﻿/*
-Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+Например, заданы 2 массива:
+Их произведение будет равно следующему массиву:
 
-Например, задан массив:
+1 4 7 2  *  1 5 8 5   =>    1 20 56 10
+5 9 2 3  *  4 9 4 2   =>    20 81 8 6
+8 4 2 4  *  7 2 2 6   =>    56 8 4 24
+5 2 6 7  *  2 3 4 7   =>    10 6 24 49
 
-1 4 7 2
-5 9 2 3
-8 4 2 4
-5 2 6 7
-
-Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
-
-Что такое прямоугольный массив слегка не понятно))) будем считать что не одинаковые индексы
-*/
+ */
 
 
-zada4a56();
-void zada4a56()
+zada4a58();
+void zada4a58()
 {
-  Console.Write($"Задача 56.Введите цифры первого и второго ПРЯМОУГОЛЬНОГО)) массива\nчерез пробел: ");
+  Console.Write($"Задача 58.Введите две цифры через пробел: ");
   List<string> ListInputString = new List<string>();
   int[] IndexFromList = new int[2];
   ParseStrInput(Console.ReadLine());
-  int[] MinSummArray = new int[IndexFromList[1]];
-  int[,] ResultArray = new int[IndexFromList[0], IndexFromList[1]];
+  int[,] ArrayOne = new int[IndexFromList[0], IndexFromList[1]];
+  int[,] ArrayTwo = new int[IndexFromList[0], IndexFromList[1]];
+  int[,] ArrayResult = new int[IndexFromList[0], IndexFromList[1]];
   GenArray();
-  Console.WriteLine();
-  int MinimalDig = int.MaxValue;
-  int MinimalIndex = 0;
-  for(int i = 0; i < MinSummArray.Length; i++)
-  {
-    Console.WriteLine($"index:{i},val:{MinSummArray[i]}\t");
-    if (MinSummArray[i] < MinimalDig)
-      { 
-        MinimalDig = MinSummArray[i];
-        MinimalIndex = i;
-      }
-  }
-  Console.Write($"номер строки с наименьшей суммой элементов: {MinimalIndex+1}");
+  Console.Write($"Первый массив:\n");
+  PrintArray(ArrayOne);
+  Console.Write($"Второй массив:\n");
+  PrintArray(ArrayTwo);
+  Console.Write($"Результат умножения:\n");
+  PrintArray(ArrayResult);
+
+  
 
   void ParseStrInput(string inputstring)
   {
@@ -104,9 +97,20 @@ void zada4a56()
     {
       for (int j = 0; j < IndexFromList[0]; j++)
       {
-        ResultArray[j, i] = GenRandomDigit();
-        MinSummArray[i] += ResultArray[j, i]; 
-        Console.Write($"\t{ResultArray[j, i]}");
+        ArrayOne[j, i] = GenRandomDigit();
+        ArrayTwo[j, i] = GenRandomDigit();
+        ArrayResult[j,i] = ArrayOne[j, i] * ArrayTwo[j, i]; 
+      }
+    }
+  }
+  
+  void PrintArray(int[,] ints)
+  {
+    for (int i = 0; i < IndexFromList[1]; i++)
+    {
+      for (int j = 0; j < IndexFromList[0]; j++)
+      {
+        Console.Write($"{ints[j, i]}\t");
       }
       Console.Write($"\t\n");
     }
