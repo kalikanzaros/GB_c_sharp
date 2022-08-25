@@ -14,8 +14,8 @@
 */
 
 
-zada4a54();
-void zada4a54()
+zada4a56();
+void zada4a56()
 {
   Console.Write($"Задача 56.Введите цифры первого и второго ПРЯМОУГОЛЬНОГО)) массива\nчерез пробел: ");
   List<string> ListInputString = new List<string>();
