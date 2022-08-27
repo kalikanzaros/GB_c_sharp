@@ -1,118 +1,107 @@
 ﻿/*
-Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-Например, заданы 2 массива:
-Их произведение будет равно следующему массиву:
+ Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+Например, задан массив:
+1 4 7 2
+5 9 2 3
+8 4 2 4
+5 2 6 7
+Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
-1 4 7 2  *  1 5 8 5   =>    1 20 56 10
-5 9 2 3  *  4 9 4 2   =>    20 81 8 6
-8 4 2 4  *  7 2 2 6   =>    56 8 4 24
-5 2 6 7  *  2 3 4 7   =>    10 6 24 49
-
- */
-
-
-zada4a58();
-void zada4a58()
+Что такое прямоугольный массив слегка не понятно))) будем считать что не одинаковые индексы
+*/
+zada4a56();
+void zada4a56()
 {
-  Console.Write($"Задача 58.Введите две цифры через пробел: ");
-  List<string> ListInputString = new List<string>();
-  int[] IndexFromList = new int[2];
-  ParseStrInput(Console.ReadLine());
-  int[,] ArrayOne = new int[IndexFromList[0], IndexFromList[1]];
-  int[,] ArrayTwo = new int[IndexFromList[0], IndexFromList[1]];
-  int[,] ArrayResult = new int[IndexFromList[0], IndexFromList[1]];
-  GenArray();
-  Console.Write($"Первый массив:\n");
-  PrintArray(ArrayOne);
-  Console.Write($"Второй массив:\n");
-  PrintArray(ArrayTwo);
-  Console.Write($"Результат умножения:\n");
-  PrintArray(ArrayResult);
-
-  
-
-  void ParseStrInput(string inputstring)
-  {
-    bool whilecounter = false;
-
-    while (whilecounter == false)
+  Console.Write($"Задача 56.Введите цифры первого и второго ПРЯМОУГОЛЬНОГО)) массива\nчерез пробел: ");
+    List<string> ListInputString = new List<string>();
+    int[] IndexFromList = new int[2];
+    ParseStrInput(Console.ReadLine());
+    int[] MinSummArray = new int[IndexFromList[0]];
+    int[,] ResultArray = new int[IndexFromList[0], IndexFromList[1]];
+    GenArray();
+    Console.WriteLine();
+    int MinimalDig = int.MaxValue;
+    int MinimalIndex = 0;
+    for (int i = 0; i < MinSummArray.Length; i++)
     {
-      if (inputstring.Split().ToList().Count() == 2 && !inputstring.Contains("-") && inputstring.Length >= 3
-          && (inputstring.Split()[0] != inputstring.Split()[1]))
+      Console.Write($"index:{i},val:{MinSummArray[i]}\t");
+      if (MinSummArray[i] < MinimalDig)
       {
-        ListInputString.AddRange(inputstring.Split().ToList());
-        whilecounter = true;
-      }
-      else
-      {
-        Console.Write($"Не похоже на два числа через пробел или цифры одинаковые, попробуем ещё раз: ");
-        ListInputString.Clear();
-        whilecounter = false;
-        inputstring = null;
-        ParseStrInput(Console.ReadLine());
-        break;
+        MinimalDig = MinSummArray[i];
+        MinimalIndex = i;
       }
     }
-    for (int i = 0; i < 2; i++)
-    {
-      if (ParseIntInput(ListInputString[i]) > 0)
-      {
-        IndexFromList[i] = ParseIntInput(ListInputString[i]);
-      }
-      else
-      {
-        Console.WriteLine($"Индексы меньше 1 не допускаются\nвведём индексы ещё раз:");
-        ListInputString.Clear();
-        inputstring = null;
-        ParseStrInput(Console.ReadLine());
-        break;
-      }
-    }
-  }
+    Console.WriteLine($"\nНомер строки с наименьшей суммой элементов: {MinimalIndex + 1}");
 
-  static int ParseIntInput(string pstring)
-  {
-    try
+    static int GenRandomDigit(int minndex = 2, int maxindex = 10)
     {
-      Int32.TryParse(pstring, out int result);
+      Random random = new();
+      int result = random.Next(minndex, maxindex);
       return result;
     }
-    catch (Exception e)
+    void ParseStrInput(string inputstring)
     {
-      Console.WriteLine($"ParseIntInput Error: {e.Message}");
-      return -1;
-    }
-  }
-
-  static int GenRandomDigit(int minndex = 2, int maxindex = 10)
-  {
-    Random random = new();
-    int result = random.Next(minndex, maxindex);
-    return result;
-  }
-
-  void GenArray()
-  {
-    for (int i = 0; i < IndexFromList[1]; i++)
-    {
-      for (int j = 0; j < IndexFromList[0]; j++)
+      bool whilecounter = false;
+      while (whilecounter == false)
       {
-        ArrayOne[j, i] = GenRandomDigit();
-        ArrayTwo[j, i] = GenRandomDigit();
-        ArrayResult[j,i] = ArrayOne[j, i] * ArrayTwo[j, i]; 
+        if (inputstring.Split().ToList().Count() == 2 && !inputstring.Contains("-") && inputstring.Length >= 3
+            && (inputstring.Split()[0] != inputstring.Split()[1]))
+        {
+          ListInputString.AddRange(inputstring.Split().ToList());
+          whilecounter = true;
+        }
+        else
+        {
+          Console.Write($"Не похоже на два числа через пробел или цифры одинаковые, попробуем ещё раз: ");
+          ListInputString.Clear();
+          whilecounter = false;
+          inputstring = null;
+          ParseStrInput(Console.ReadLine());
+          break;
+        }
+      }
+      for (int i = 0; i < 2; i++)
+      {
+        if (ParseIntInput(ListInputString[i]) > 0)
+        {
+          IndexFromList[i] = ParseIntInput(ListInputString[i]);
+        }
+        else
+        {
+          Console.WriteLine($"Индексы меньше 1 не допускаются\nвведём индексы ещё раз:");
+          ListInputString.Clear();
+          inputstring = null;
+          ParseStrInput(Console.ReadLine());
+          break;
+        }
       }
     }
-  }
-  
-  void PrintArray(int[,] ints)
-  {
-    for (int i = 0; i < IndexFromList[1]; i++)
+    static int ParseIntInput(string pstring)
     {
-      for (int j = 0; j < IndexFromList[0]; j++)
+      try
       {
-        Console.Write($"{ints[j, i]}\t");
+        Int32.TryParse(pstring, out int result);
+        return result;
       }
-      Console.Write($"\t\n");
+      catch (Exception e)
+      {
+        Console.WriteLine($"ParseIntInput Error: {e.Message}");
+        return -1;
+      }
     }
-  }
+    void GenArray()
+    {
+      for (int i = 0; i < IndexFromList[0]; i++)
+      {
+        for (int j = 0; j < IndexFromList[1]; j++)
+        {
+        ResultArray[i,j] = GenRandomDigit();
+        MinSummArray[i] += ResultArray[i,j];
+        Console.Write($"\t{ResultArray[i,j]}");
+        }
+        Console.Write($"\t\n");
+      }
+    }
 }
+  
+  
